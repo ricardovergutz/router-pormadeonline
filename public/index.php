@@ -9,6 +9,8 @@ if ($url==''){
     $newUrl = $urlBase;
 }else if (array_key_exists($url, $urlAntiga)){
     $newUrl = $urlBase . "/" . $urlAntiga[$url];
+// }else if( substr($url, 0, 5) == 'media' ) {
+//     $newUrl = $urlBase . "/arquivos" . substr($url, 5);
 }else if( substr($url, 0, 4) == 'blog' ) {
     $newUrl = "https://blog.pormade.com.br";
     if (array_key_exists($url, $urlBlog)){
